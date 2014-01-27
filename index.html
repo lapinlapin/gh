@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--ШАБЛОН-->
+	<script id="template" type="text/html">
+		<div class="popup">
+			<div class="popup__header">
+				<h3>{{dataTitle}}</h3>
+			</div>
+
+			<div class="popup__content">
+				<p>{{dataMessage}}</p>
+			</div>
+
+			<div class="popup__footer">
+				<ul>
+					<li id="buttonOk">Ок</li>
+					<li id="buttonCancel">Отмена</li>
+				</ul>
+			</div>
+		</div>
+	</script>
+	<!--КОНЕЦ-->
+
+	<div class="header">
+		<ul class="header__links">
+			<li class="header__link"><a data-title="Внимание!" data-message="Подтвердите переход на сайт YANDEX" href="http://yandex.ru">Yandex</a></li>
+
+			<li class="header__link"><a data-title="Внимание!" data-message="Подтвердите переход на сайт GOOGLE" href="http://google.ru">Google</a></li>
+
+			<li class="header__link"><a data-title="Внимание!" data-message="Подтвердите переход на сайт MAIL" href="http://mail.ru">Mail</a></li>
+
+			<li class="header__link"><a data-title="Внимание!" data-message="Подтвердите переход на сайт VK" href="http://vk.com">VK</a></li>
+
+			<li class="header__link"><a data-title="Внимание!" data-message="Подтвердите переход на сайт ODNOKLASSNIKI" href="http://odnoklassniki.ru">Odnoklassniki</a></li>
+		</ul>
+	</div>
+
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="mustache.js" type="text/javascript"></script>
+	<script src="popup.js" type="text/javascript"></script>
+	<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
